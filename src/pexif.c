@@ -7,8 +7,6 @@
 
 int save_without_exif(char *file_name, long img_size, long exif_start, BYTE *img_bytes);
 void init_basic_jfif(BYTE purged[]);
-void save_to_img_file(BYTE purged[], long image_size, char *file_name);
-char *get_pexifed_file_name(char *file_name);
 
 int remove_exif_in_cwd()
 {
