@@ -12,7 +12,7 @@ char *get_file_extension(const char *file_name);
 /**
  * Given a string src, returns the last index of the character toFind in src or -1 if toFind couldn't be found in src.
  */
-int lastIndexOf(char toFind, char *src);
+int last_index_of(char toFind, char *src);
 
 /**
  * Returns the byte position of the beginning of the exif marker 0xFFE1, i.e. the byte position of 0xFF.

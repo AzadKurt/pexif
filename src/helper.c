@@ -12,7 +12,7 @@ char *get_file_extension(const char *file_name)
     return dot + 1;
 }
 
-int lastIndexOf(char toFind, char *src)
+int last_index_of(char toFind, char *src)
 {
     int idx = -1;
     int i = 0;
@@ -61,9 +61,10 @@ long validate_exif_sig(long byte_count, BYTE img_bytes[byte_count])
 char *get_pexifed_file_name(char *file_name)
 {
     char *new_file_name = malloc(sizeof(char) * (strlen(file_name) + 7)); // 7 for "pexif_" + '\0'
-    // lastIndexOf needed for absolute paths such as "C:\image.jpg" where adding "pexif_" at the beginning would result in an invalid path
-    int last_backslash_idx = lastIndexOf('\\', file_name);
-    int last_slash_idx = lastIndexOf('/', file_name);
+    // last_index_of needed for absolute paths such as "C:\image.jpg" where
+    // adding "pexif_" at the beginning would result in an invalid path
+    int last_backslash_idx = last_index_of('\\', file_name);
+    int last_slash_idx = last_index_of('/', file_name);
     if (last_backslash_idx == -1 && last_slash_idx == -1)
     {
         strcpy(new_file_name, "pexif_");
