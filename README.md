@@ -19,11 +19,11 @@ It is recommended to include the pexif binary in a folder that is part of the PA
 
 ### `pexif .`
 
-![alt-text](.github/pexif-dir.gif)
+![gif of pexif applied on a directory](.github/pexif-dir.gif)
 
 ### `pexif (FILEPATH)+`
 
-![alt-text](.github/pexif-paths.gif)
+![gif of pexif applied on specific paths](.github/pexif-paths.gif)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
