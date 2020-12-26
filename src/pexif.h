@@ -8,7 +8,8 @@
 int remove_exif_from_img(char *file_name);
 
 /**
- * Removes the exif data from all jpg/jpeg images in the current working directory.
+ * Removes the exif data from all jpg/jpeg images in the current working
+ * directory.
  */
 int remove_exif_in_cwd();
 
